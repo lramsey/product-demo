@@ -1,7 +1,7 @@
 product-demo
 ============
 
-Demo application for the Product-Recommender NPM module.  To see more about product-recommender, please visit its <a src='http://www.npm.js.org/package/product-recommender'>npm profile</a>.  Code in the index.js file demonstrates how product-recommender can be used in practice.To run this demo, first be sure to install product-recommender.
+Demo application for the Product-Recommender NPM module.  To see more about product-recommender, please visit npm.js.org/package/product-recommender.  Code in the index.js file demonstrates how product-recommender can be used in practice.To run this demo, first be sure to install product-recommender.
     
     npm install product-recommender
 
