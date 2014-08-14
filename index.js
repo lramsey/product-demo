@@ -36,7 +36,7 @@ var makeRecommendations = function(){
         console.log('power recommendations for ' + customer + ':' + rec.powerRecommendation(customer) + '\n');
         console.log('product:',product + '\n');
         console.log('neighborhoods:',rec.nearestProducts(product,3) + '\n');
-        console.log('neighbors:',rec.nearestNeighbors(customer, 3, false));
+        console.log('neighbors:',rec.nearestNeighbors(customer, 3, false) + '\n');
         
         results = rec.getRecVariable('results');
     }, mockNames, mockProducts);
