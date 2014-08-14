@@ -1,6 +1,4 @@
 var rec = require('product-recommender');
-var Promise = require('bluebird');
-var fs = Promise.promisifyAll(require('fs'));
 
 var mockNames = 500;
 var mockProducts = 120;
