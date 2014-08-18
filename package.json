@@ -1,13 +1,25 @@
 {
   "name": "product-demo",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Demo application for the NPM module Product-Recommender",
   "main": "index.js",
   "dependencies": {
-    "product-recommender": ">= 1.2.1"
+    "product-recommender": ">= 1.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "python",
+    "product recommendation",
+    "recommendation"
+    "machine learning",
+    "analytics",
+    "product-recommender",
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lramsey/product-demo.git"
   },
   "author": "lramsey",
   "license": "MIT"
