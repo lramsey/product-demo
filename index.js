@@ -15,7 +15,7 @@ var makeRecommendations = function(){
         var pastRecs = rec.getRecVariable('pastRecommendations');
         pastRecs[customer][pastRecProduct] = true;
         rec.loadRecVariable('pastRecommendations', pastRecs);
-        console.log('\nDid ' + customer + ' buy ' + pastRecProduct + ' ... ' + rec.getRecVariable('pastRecommendations')[customer][pastRecProduct] + '\n');
+        console.log('\nDid ' + customer + ' buy ' + pastRecProduct + '?  ' + rec.getRecVariable('pastRecommendations')[customer][pastRecProduct] + '\n');
 
         var product = rec.recommender(customer);
         console.log(customer + ' should buy ' + product + '\n');
