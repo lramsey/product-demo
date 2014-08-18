@@ -1,6 +1,6 @@
 {
   "name": "product-demo",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Demo application for the NPM module Product-Recommender",
   "main": "index.js",
   "dependencies": {
@@ -12,10 +12,10 @@
   "keywords": [
     "python",
     "product recommendation",
-    "recommendation"
+    "recommendation",
     "machine learning",
     "analytics",
-    "product-recommender",
+    "product-recommender"
   ],
   "repository": {
     "type": "git",
