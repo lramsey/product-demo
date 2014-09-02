@@ -10,5 +10,8 @@ With Product-Recommender loaded, now you can see Product-Recommender in action. 
     node index.js
 
 The analysis will now begin executing.  Included in this project is a matrix of faux data that will be used for this demo, which is contained in matrix.txt.  A string referencing the file directory of our matrix will be passed to Product-Recommender, which will read the data from that file and enter it into the algorithm.
-
 When the algorithm has concluded executing, various analytics methods will be run.  The results will be logged to the terminal tab that is running the node script.  Not all methods from Product-Recommender will be run in this demo, but other methods can be easily added to Product-Demo by following the provided format.  All documentation for the analytics methods run in Product-Demo are contained in the Product-Recommender <a href="https://github.com/lramsey/product-recommender">ReadMe</a> on github.
+
+A mocha test suite for Product-Recommender is included in this demo application.  To run the mocha test suite, enter the command npm test.
+  
+    npm test
