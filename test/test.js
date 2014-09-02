@@ -6,7 +6,6 @@ var mockProducts = 120;
 var matrix = __dirname + '/../matrix.txt';
 
 describe('Product-Recommender', function(){
-  this.timeout(180000);
   it('gains results from the python process', function(done){
     rec.setRecVariables(matrix, function(){
 
@@ -26,7 +25,6 @@ function done(){}
 function recommendationVariablTests(){
   
   describe('recommendation variables', function(){
-    this.timeout(240000);
     it('should get the custmoer array', function(){
       var customers = rec.getRecVariable('customers');
       expect(Array.isArray(customers)).to.be.true;
@@ -50,7 +48,6 @@ function recommendationVariablTests(){
 
 function analyticsMethodsTests(){
   describe('Analytics Methods', function(){
-    this.timeout(300000);
     var customer = rec.getRecVariable('customers')[0];
     var product = rec.recommender(customer);
     var productsMap = rec.getRecVariable('productsMap');
@@ -85,7 +82,6 @@ function recommendationTests(productsMap, product, customer){
 function clusterTests(customer, product, productsMap){
   var productClustersMap;
   describe('Clusters', function(){
-    this.timeout(360000);
     it('should find a cluster of similar products', function(){
       var cluster = rec.relatedProducts(product);
       expect(Array.isArray(cluster)).to.be.true;
@@ -111,6 +107,7 @@ function clusterTests(customer, product, productsMap){
       var index = productClustersMap[product];
 
       var subClusterMap = rec.getRecVariable('subClustersHelpers')[index][2];
+      
       var customer1 = customers[0];
       var customer2 = customers[1];
 
